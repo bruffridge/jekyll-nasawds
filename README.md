@@ -1,7 +1,7 @@
 # jekyll-nasawds
 
 This is a [Jekyll theme](https://jekyllrb.com/docs/themes/) for the
-[NASA Web Design Standards](https://bruffridge.github.io/web-design-standards-docs/).
+[NASA Web Design Standards](https://bruffridge.github.io/web-design-standards-docs/) forked from [18F/jekyll-uswds](https://github.com/18F/jekyll-uswds).
 
 ## Table of contents
 1. [Installation](#installation)
@@ -30,6 +30,10 @@ This is a [Jekyll theme](https://jekyllrb.com/docs/themes/) for the
 
 ## Installation
 
+You can clone [this Jekyll starter site](https://github.com/bruffridge/jekyll-nasawds-demo) for a barebones implementation.  
+**or**  
+Configure your Jekyll site from scratch.
+
 1. Install the theme as a Ruby Gem by adding it to your `Gemfile`
    like so:
 
@@ -51,8 +55,6 @@ This is a [Jekyll theme](https://jekyllrb.com/docs/themes/) for the
     ```
 
 You will need to restart your Jekyll server to see the effects.
-
-Or you can clone [this Jekyll starter site](https://github.com/bruffridge/jekyll-nasawds-demo) for a barebones implementation.
 
 ### Development
 
@@ -256,7 +258,7 @@ your scripts from running propertly.)
 Both [stylesheets](#stylesheets) and [scripts](#scripts) can be configured
 
 1. Assets configured at the `site` level (in your `_config.yml`) will be loaded
-   in all pages that use the USWDS [layouts](#layouts).
+   in all pages that use the NASAWDS [layouts](#layouts).
 1. Those configured at the layout level (in that layout's [front
    matter]) will be loaded on all pages that use that layout, after
    site assets.
@@ -275,7 +277,7 @@ and layouts.
 ### Customizing with Sass
 
 1. Create a [Sass][] (or SCSS) entry point that sets variables and then imports
-   the USWDS source files:
+   the NASAWDS source files:
 
     ```scss
     ---
@@ -331,7 +333,7 @@ your site by placing a file with the same name into your site's
 - To change how [stylesheets](#stylesheets) are loaded or
   referenced, you can create your own `_includes/styles.html`,
   which will subsequently change how stylesheets are loaded in all
-  layouts that inherit from the USWDS [base layout](#layout-base).
+  layouts that inherit from the NASAWDS [base layout](#layout-base).
 
 - You can change how the side navigation is rendered (but not which
   data it receives) in the [docs layout](#layout-docs) by creating
