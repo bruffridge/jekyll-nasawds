@@ -1,4 +1,4 @@
-# jekyll-uswds
+# jekyll-nasawds
 
 This is a [Jekyll theme](https://jekyllrb.com/docs/themes/) for the
 [NASA Web Design Standards](https://bruffridge.github.io/web-design-standards-docs/).
@@ -47,7 +47,7 @@ This is a [Jekyll theme](https://jekyllrb.com/docs/themes/) for the
    `_config.yml`:
 
     ```yml
-    theme: jekyll-uswds
+    theme: jekyll-nasawds
     ```
 
 You will need to restart your Jekyll server to see the effects.
@@ -68,7 +68,7 @@ To develop this theme and/or test it locally:
    `Gemfile` to point at the local clone of this repo:
 
     ```ruby
-    gem 'jekyll-uswds', :path => '../path/to/jekyll-uswds'
+    gem 'jekyll-nasawds', :path => '../path/to/jekyll-nasawds'
     ```
     **or**
 
