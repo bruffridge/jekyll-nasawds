@@ -1,13 +1,15 @@
 {
   "private": true,
-  "author": "18F",
+  "author": "bruffridge",
   "license": "CC0-1.0",
   "scripts": {
-    "update-uswds": "npm run update-assets && npm run update-sass",
-    "update-assets": "rsync -avrC --delete node_modules/uswds/dist/ assets/uswds/",
-    "update-sass": "rsync -avrC --delete node_modules/uswds/src/stylesheets/ _sass/uswds/"
+    "build": "bundle exec jekyll build",
+    "start": "bundle exec jekyll serve --host 0.0.0.0",
+    "update-nasawds": "npm run update-assets && npm run update-sass",
+    "update-assets": "rsync -avrC --delete node_modules/nasawds/dist/ assets/nasawds/",
+    "update-sass": "rsync -avrC --delete node_modules/nasawds/src/stylesheets/ _sass/nasawds/"
   },
   "dependencies": {
-    "uswds": "^1.0.0"
+    "nasawds": "^1.0.0"
   }
 }

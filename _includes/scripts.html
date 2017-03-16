@@ -1,10 +1,10 @@
 {% assign _scripts = '' | split: '' %}
-{% assign _async_marker = 'uswds_async=true' %}
+{% assign _async_marker = 'nasawds_async=true' %}
 {% assign _site_scripts = site.scripts %}
 {% unless _site_scripts -%}
-  {% assign _uswds_js = '/assets/uswds/js/uswds.min.js' | append: '?' | append: _async_marker %}
+  {% assign _nasawds_js = '/assets/nasawds/js/nasawds.min.js' | append: '?' | append: _async_marker %}
   {% assign _site_scripts = '' | split: ''
-    | push: _uswds_js %}
+    | push: _nasawds_js %}
 {% endunless %}
 {% assign _scripts = _scripts
   | push: _site_scripts
