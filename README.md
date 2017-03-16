@@ -1,7 +1,7 @@
 # jekyll-uswds
 
 This is a [Jekyll theme](https://jekyllrb.com/docs/themes/) for the
-[U.S. Web Design Standards](https://standards.usa.gov).
+[NASA Web Design Standards](https://bruffridge.github.io/web-design-standards-docs/).
 
 ## Table of contents
 1. [Installation](#installation)
@@ -34,7 +34,7 @@ This is a [Jekyll theme](https://jekyllrb.com/docs/themes/) for the
    like so:
 
     ```ruby
-    gem 'jekyll-uswds', :git => 'https://github.com/18F/jekyll-uswds.git'
+    gem 'jekyll-nasawds', :git => 'https://github.com/bruffridge/jekyll-nasawds.git'
     ```
 
 1. Fetch and update your bundled gems by running:
@@ -52,6 +52,7 @@ This is a [Jekyll theme](https://jekyllrb.com/docs/themes/) for the
 
 You will need to restart your Jekyll server to see the effects.
 
+Or you can clone [this Jekyll starter site](https://github.com/bruffridge/jekyll-nasawds-demo) for a barebones implementation.
 
 ### Development
 
@@ -69,20 +70,23 @@ To develop this theme and/or test it locally:
     ```ruby
     gem 'jekyll-uswds', :path => '../path/to/jekyll-uswds'
     ```
+    **or**
+
+1. [Run it locally in a docker container](https://github.com/bruffridge/jekyll-docker)
 
 ### Versioning
 
 To reference a specific version of this plugin:
 
-1. Visit the [releases page](https://github.com/18F/jekyll-uswds/releases) and
+1. Visit the [releases page](https://github.com/bruffridge/jekyll-nasawds/releases) and
    decide which version you want to use.
 
 1. Add or update the `:tag` argument for this gem in your `Gemfile` to the name
    of the release tag, e.g.
 
     ```ruby
-    gem 'jekyll-uswds', \
-      :git => 'https://github.com/18F/jekyll-uswds.git', \
+    gem 'jekyll-nasawds', \
+      :git => 'https://github.com/bruffridge/jekyll-nasawds.git', \
       :tag => 'v0.1.1'
     ```
 
@@ -196,9 +200,9 @@ you add one or both of those manually, your HTML will include the following:
 
 ```html
 <!-- in the <head> -->
-<link rel="stylesheet" href="/assets/uswds/css/uswds.min.css" media="screen">
+<link rel="stylesheet" href="/assets/nasawds/css/nasawds.min.css" media="screen">
 <!-- before </body> -->
-<script src="/assets/uswds/js/uswds.min.js" async>
+<script src="/assets/nasawds/js/nasawds.min.js" async>
 ```
 
 Read more about customizing [stylesheets](#stylesheets) and [scripts](#scripts)
@@ -278,7 +282,7 @@ and layouts.
     # assets/main.scss
     ---
     // set your variables or @import them here
-    @import 'uswds/all';
+    @import 'nasawds/nasawds';
     ```
 
 1. Change the path to your site's default stylesheet in your `_config.yml`:
@@ -288,9 +292,9 @@ and layouts.
       - /assets/main.css
     ```
 
-All of the Standards' [SCSS source files](https://github.com/18F/web-design-standards/tree/master/src/stylesheets)
-are placed in the [_sass/uswds](_sass/uswds) directory and are available as
-Sass imports via `@import 'uswds/<path>';`. See the [Jekyll docs][Jekyll Sass]
+All of the Standards' [SCSS source files](https://github.com/bruffridge/web-design-standards/tree/master/src/stylesheets)
+are placed in the [_sass/nasawds](_sass/nasawds) directory and are available as
+Sass imports via `@import 'nasawds/<path>';`. See the [Jekyll docs][Jekyll Sass]
 for more information about its Sass/SCSS support, and configuring its Sass
 renderer in your site's config.
 
@@ -302,7 +306,7 @@ renderer in your site's config.
 
     ```scss
     ---
-    # assets/uswds-overrides.scss
+    # assets/nasawds-overrides.scss
     ---
     .usa-header {
       // overrides here
@@ -310,12 +314,12 @@ renderer in your site's config.
     ```
 
 1. Add the new stylesheet's path to your `_config.yml` _after_
-   `uswds.min.css`:
+   `nasawds.min.css`:
 
     ```yml
     styles:
-      - /assets/uswds/css/uswds.min.css
-      - /assets/uswds-overrides.css
+      - /assets/nasawds/css/nasawds.min.css
+      - /assets/nasawds-overrides.css
     ```
 
 ### Overriding includes and layouts
